@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 18px;
+}
+
+.arrow {
+  transition: .5s ease;
+  background: white;
+  border: 2px solid black;
+  border-radius: 100%;
+  width: 60px;
+  margin: 10px auto;
+  padding: 6px;
+}
+.arrow:hover {
+  transition: .5s ease; 
+  background: lightgray;
+  box-shadow: 1px 1px 3px gray;
+  padding: 0px;
+}
+
+
+/* Header */
+.header {
+  background-image: url(./images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-position-y: top;
+  width: 100%;
+  padding: 0 60px 20px 60px;
+  margin: 0 auto;
+  min-height: 800px;
+  color: white;
+}
+.heading {
+  width: 600px;
+  text-align: center;
+  font-size: 15px;
+  background: rgba(128, 128, 128, 0.65);
+  border-radius: 15px;  
+  margin-top: 200px;
+}
+.short-dis {
+  width: 400px;
+  text-align: start;
+}
+.nav-link {
+  transition: .5s ease;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background: rgba(128, 128, 128, 0.75);
+  border-radius: 10px;
+  border: 1px solid gray;
+  min-width: 150px;
+  padding: 10px;
+  margin: 10px 5px;
+}
+.nav-link:hover {
+  transition: 1s ease;
+  color: black;
+  background: white;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+/* About */
+.about-box{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid gray;
+  margin: 20px auto;
+}
+.about-img-box {
+  width: 1200px;
+}
+
+/*Projects*/
+.projects-box {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-bottom: 1px solid gray;
+  margin: 20px auto;
+}
+.projects-header {
+  width: 100%;
+  text-align: center;
+}
+
+.project-image {
+  width: 40%;
+  border: 1px solid black;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px gray;
+}
+.content {
+  width: 60%;
+}
+.project-box {
+  display: flex;
+  width: 100%;
+  
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-top: 40px;
+  box-shadow: 5px 5px 10px gray;
+}
+.link-button {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px gray;
+}
+.link-button:hover {
+  background: gray;
+  color: white;
+  padding: 3px;
+}
+ul, li {
+  list-style: none;
+}
+.skills-list {
+  display: flex;
+  margin-top: 20px;
+}
+.skill {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.description {
+  padding: 15px;
+}
+
