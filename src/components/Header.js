@@ -11,7 +11,7 @@ export default function Header(){
             </div>
             <div className='heading'>
                 <h1>Hello, my name is Logan Karnes.</h1>
-                <p className='short-dis'>I am a Full Stack Web Developer from Lambda School who specailizes in React.js.</p>
+                <p className='short-dis'>I am a Full Stack Web Developer from Lambda School who specailizes in React.js.<br/>**Currently under construction***</p>
                 <a href='#About'><img className='arrow' src={Arrow}/></a>    
             </div>
             
