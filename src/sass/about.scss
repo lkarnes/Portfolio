@@ -1,6 +1,6 @@
 .about-box {
     width: 1200px;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -10,8 +10,14 @@
     margin: 20px auto;
   }
   .about-img-box {
-    width: 1200px;
+    width: 900px;
+    margin: 0 auto;
   }
   .about-box > a {
     margin: 0 auto;
+  }
+
+  .about-box > h1 {
+    padding: 20px 0; 
+
   }
