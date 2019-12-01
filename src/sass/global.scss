@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
     margin: 0 auto;
-    background: whitesmoke;
+    color:lightgrey;
   }
   html {
     scroll-behavior: smooth;
   }
   body {
     font-size: 62.5%;
+    background: rgb(10, 10, 10);
   }
   p, h1, h2, h3, h4, h5, a {
     font-family: 'Roboto Slab', serif;
@@ -38,7 +39,8 @@
   }
   .arrow:hover {
     transition: 0.5s ease;
-    background: lightgray;
+    background: gray;
+    border: 2px solid white;
     box-shadow: 1px 1px 3px gray;
     padding: 0px;
   }
