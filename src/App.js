@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import projectsData from './data';
 import About from './components/About.js'
 
