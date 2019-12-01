@@ -15,7 +15,7 @@
     border: 1px solid black;
     margin: 20px;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 10px black;
   }
   .content {
     width: 60%;
@@ -25,20 +25,23 @@
     width: 100%;
     padding: 10px;
     border: 2px solid gray;
+    background: rgb(34, 34, 34);
     border-radius: 5px;
     margin-top: 40px;
-    box-shadow: 5px 5px 10px gray;
   }
   .link-button {
     text-decoration: none;
-    color: black;
+    color: whitesmoke;
+    font-size: 20px;
+    background: rgb(0, 77, 177);
     padding: 5px;
     border: 1px solid black;
     border-radius: 5px;
     margin-right: 20px;
-    box-shadow: 1px 1px 3px gray;
+    box-shadow: 1px 1px 3px black;
   }
   .link-button:hover {
+    transition: .3s;
     background: gray;
     color: white;
     padding: 3px;
