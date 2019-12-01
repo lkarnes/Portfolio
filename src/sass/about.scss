@@ -1,13 +1,16 @@
-.about-box{
+.about-box {
     width: 1200px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
-    border-top: 1px solid grey; 
+    border-top: 1px solid grey;
     border-bottom: 1px solid gray;
     margin: 20px auto;
   }
   .about-img-box {
     width: 1200px;
+  }
+  .about-box > a {
+    margin: 0 auto;
   }
