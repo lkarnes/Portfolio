@@ -6,7 +6,6 @@ export default function About(){
     return(
         
         <div className='about-box'>
-            
             <img className='about-img-box'src={Beach} />
             <h1>About Me</h1>
             <div className='text-box'>
