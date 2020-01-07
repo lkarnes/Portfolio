@@ -1,3 +1,7 @@
+$desktop: 992px;
+$tablet: 1024px;
+$phone: 480px;
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -16,17 +20,35 @@
   }
   p {
     font-size: 1.25rem;
+    @media screen and (max-width: $tablet) {
+      font-size: 1rem;
+    }
   }
   h1 {
     font-size: 2rem;
     font-weight: bold;
+    @media screen and (max-width: $tablet) {
+      font-size: 2.5rem;
+    }
   }
   h2 {
     font-size: 1.6rem;
+    @media screen and (max-width: $tablet) {
+      font-size: 2.35rem;
+    }
   }
   h3 {
     font-size: 1.4rem;
     font-weight: bold;
+    @media screen and (max-width: $tablet) {
+      font-size: 2.05rem;
+    }
+  }
+  li {
+    font-size: .75rem;
+    @media screen and (max-width: $tablet) {
+      font-size: .65rem;
+    }
   }
   .arrow {
     transition: 0.5s ease;

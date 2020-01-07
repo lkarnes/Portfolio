@@ -1,54 +1,75 @@
+$desktop: 992px;
+$tablet: 1030px;
+$phone: 480px;
+
 .projects-box {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     border-bottom: 1px solid gray;
     margin: 20px auto;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
+    .projects-header {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .project-image {
+      max-width:40%;
+      border: 1px solid black;
+      margin: 20px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 10px black;
+      @media screen and (max-width: $tablet) {
+        margin: 0 auto;
+        border-radius: 20px;
+        max-width: 60%;
+      }
+    }
+    .content {
+      max-width: 60%;
+      @media screen and (max-width: $tablet) {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+    }
+    .project-box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 10px;
+      box-shadow: 5px 5px 10px rgb(0, 0, 0),
+      -5px -5px 10px rgb(51, 51, 51);
+      background: rgb(34, 34, 34);
+      border-radius: 5px;
+      margin-bottom: 40px;
+      @media screen and (max-width: $tablet) {
+        flex-direction: column;
+      }
+    }
+    .link-button {
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 20px;
+      padding: 5px;
+      
+      border-radius: 5px;
+      margin-right: 20px;
+      box-shadow: 5px 5px 10px rgb(0, 0, 0),
+      -5px -5px 10px rgb(51, 51, 51);
+    } 
+    .link-button:hover {
+        transition: .3s;
+        box-shadow: 1px 1px 1px rgb(0, 0, 0),
+      -1px -1px 1px rgb(51, 51, 51);
+        color: white;
+        padding: 3px;
+      }
   }
-  .projects-header {
-    width: 100%;
-    text-align: center;
-  }
-  .project-image {
-    width: 40%;
-    border: 1px solid black;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px black;
-  }
-  .content {
-    width: 60%;
-  }
-  .project-box {
-    display: flex;
-    width: 100%;
-    padding: 10px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0),
-    -5px -5px 10px rgb(51, 51, 51);
-    background: rgb(34, 34, 34);
-    border-radius: 5px;
-    margin-top: 60px;
-  }
-  .link-button {
-    text-decoration: none;
-    color: whitesmoke;
-    font-size: 20px;
-    background: rgb(0, 77, 177);
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-right: 20px;
-    box-shadow: 1px 1px 3px black;
-  }
-  .link-button:hover {
-    transition: .3s;
-    background: gray;
-    color: white;
-    padding: 3px;
-  }
-  ul,
-  li {
+  ul,li {
     list-style: none;
   }
   .skills-list {
@@ -56,7 +77,6 @@
     margin-top: 20px;
   }
   .skill {
-    font-size: 12px;
     padding: 0 10px;
   }
   .description {

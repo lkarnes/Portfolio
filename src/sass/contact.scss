@@ -1,30 +1,39 @@
+$desktop: 992px;
+$tablet: 1024px;
+$phone: 480px;
+
 .contact {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height:20vh;
+    height:15vh;
     justify-content: space-around;
+    @media screen and (max-width: $tablet) {
+        height: auto;
+    }
+    .contact-item {
+        text-align: center;
+        width: 20%;
+        padding: 10px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgb(0, 0, 0),
+        -10px -10px 10px rgb(51, 51, 51);
+        @media screen and (max-width: $tablet) {
+            width: 40%;
+            margin: 20px; 
+        }
+        a {
+            font-size: 20px; 
+            a:hover {
+                color: grey;
+            }
+        }
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    } 
 }
 
-.contact > h1 {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.contact-item {
-    text-align: center;
-    width: 20%;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgb(0, 0, 0),
-    -10px -10px 10px rgb(51, 51, 51);
-    
-}
-.contact-item > a {
-    font-size: 20px;
-}
-.contact-item > a:hover {
-color: grey;
-font-weight: bold;
-}
