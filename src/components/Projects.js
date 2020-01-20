@@ -2,6 +2,7 @@ import React from 'react';
 import Bountiful from '../images/Bountiful.jpeg';
 import Better from '../images/BetterProfessor.png';
 import Arrow from '../images/down-arrow.png';
+import DadJokes from '../images/dad-jokes.png'
 
 const projectsData = [
     {
@@ -22,7 +23,11 @@ const projectsData = [
         githubLink: 'https://github.com/lkarnes/StoryTelling-Front-End'
     },
     
-    {title:'t3', date:'', description: '', skills: [], img: '', link: ''},
+    {title:'Dad Jokes Web API: Node', date:'December 2019', description: 'In this project I collaborated with the front end developers in my group to assemble a well structured database that fits the needs of the application. I built this server from the ground up and made changes that were requested by the other developers(me as backend and 2 otheres aS front end). Although my frontend developers ran out of time before being able to add features like the ability to save and edit jokes all the basic CRUD operations are built out in the back end with end to end testing. This server was built using mainly Node.js, express, knex and SQL.', 
+    skills: ["Node.js", "express", "helmet", "SQL", "sqlite", "knex", "jsonwebtokens", "middleware", "authentication","encryption(bcrypt.js)", "cross-env" ],
+    img: `${DadJokes}`, 
+    githubLink: 'https://github.com/lkarnes/Back-end',
+    siteLink: 'https://ddf-app.netlify.com'},
     // {title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
     // {title:'t5', date:'', description: '',  skills: [], img: '', link: ''},
     ]

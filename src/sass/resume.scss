@@ -1,0 +1,15 @@
+$desktop: 992px;
+$tablet: 768px;
+$phone: 480px;
+
+#Resume {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width:800px;
+    height:1000px; 
+    @media screen and (max-width: $tablet) {
+        width: 600px;
+        height: 800px;
+      }
+}
