@@ -6,6 +6,8 @@ $phone: 480px;
     box-sizing: border-box;
     margin: 0 auto;
     color:lightgrey;
+    @media screen and (max-width: $phone) {
+    }
   }
   html {
     scroll-behavior: smooth;

@@ -9,8 +9,8 @@ $phone: 480px;
     flex-direction: column;
     margin: 20px auto;
     @media screen and (max-width: $tablet) {
-      width: 90%;
-      height: 700px;
+      width: 100%;
+      margin: 0 auto;
     }
     p {
     width: 100%;
@@ -35,6 +35,9 @@ $phone: 480px;
     -10px -10px 10px rgb(51, 51, 51);
     @media screen and (max-width: $tablet) {
       width: 95%;
+      img{
+        width: 100%;
+      }
     }
   }
   .about-box > a {

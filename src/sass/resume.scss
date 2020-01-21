@@ -9,7 +9,11 @@ $phone: 480px;
     width:800px;
     height:1000px; 
     @media screen and (max-width: $tablet) {
-        width: 600px;
-        height: 800px;
+        max-width: 600px;
+        max-height: 800px;
       }
+    @media screen and (max-width: $phone) {
+        width: 80%;
+        height: 900px;
+    }
 }
