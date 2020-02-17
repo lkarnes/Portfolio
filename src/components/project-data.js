@@ -1,10 +1,9 @@
-import React from 'react';
+
 import Bountiful from '../images/Bountiful.jpeg';
 import Better from '../images/BetterProfessor.png';
-import Arrow from '../images/down-arrow.png';
 import DadJokes from '../images/dad-jokes.png'
 
-const projectsData = [
+export const projectsData = [
     {
         title:'Better Professor, Build Week Unit 3 with Lambda School',
         date:'late October 2019',
@@ -27,36 +26,12 @@ const projectsData = [
     skills: ["Node.js", "express", "helmet", "SQL", "sqlite", "knex", "jsonwebtokens", "middleware", "authentication","encryption(bcrypt.js)", "cross-env" ],
     img: `${DadJokes}`, 
     githubLink: 'https://github.com/lkarnes/Back-end',
-    siteLink: 'https://ddf-app.netlify.com'},
-    // {title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
+    siteLink: ''},
+    {title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
+    {title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
+    {title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
+    {title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
+    {title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
     // {title:'t5', date:'', description: '',  skills: [], img: '', link: ''},
     ]
     //{title:'', date:'', description: '', img: '', link: ''},
-
-export default function Projects(props) {
-    return (
-        <div id='Projects' className='projects-box'>
-            <h1 className='projects-header'>Projects</h1>
-            
-            {projectsData.map(input => (
-                <div className='project-box'>
-                    <img className='project-image' src={input.img}/>
-                    <div className='content'>
-                        <h3>{input.title}</h3>
-                        <p className='project-date'>{input.date}</p>
-                        <p className='description'>{input.description}</p>
-                        <a className='link-button' href={input.githubLink}>Github Link</a>
-                        {input.siteLink ? <a className='link-button' href={input.siteLink}>Website Link</a> : <a className='link-button'>Website N/A</a>}
-                        <ul className='skills-list'>
-                            {input.skills.map(skill => (
-                                <li className='skill'>{skill}</li>
-                            ))}
-                        </ul>
-                    </div>
-                    
-                </div>
-            ))}
-            <a href='#Resume'><img className='arrow' src={Arrow}/></a>
-        </div>
-    )
-}

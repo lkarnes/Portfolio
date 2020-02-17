@@ -1,0 +1,26 @@
+.home-page{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 100px;
+    max-width: 1200px;
+    height: 100vh;
+    .intro-box{
+        margin: 10% auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        .intro-image{
+            margin: 20px 0;
+            width: 600px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        h1{
+            margin: 20px 0;
+        }
+        button:hover{
+            border: 3px solid grey;
+            color: grey;
+        }
+    }
+}

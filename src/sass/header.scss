@@ -1,114 +1,50 @@
 $desktop: 992px;
 $tablet: 1030px;
 $phone: 480px;
+
 .header {
-    background-image: url(../images/background.jpeg);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-position-y: top;
-    width: 100%;
-    padding: 0 60px 20px 60px;
-    margin: 0 auto;
-    height: 100vh;
-    color: white;
-    @media screen and (max-width: $tablet) {
-      width: 100%;
-      height: 80vh;
-    }
-  @media screen and (max-width: $phone) {
-    width: 100%;
-    height: 50vh;
-    background: none;
-    padding: 0;
-  }
-  }
-  .heading {
-    width: 35%;
-    text-align: center;
-    font-size: 15px;
-    background: rgba(0, 0, 0, 1);
-    border-radius: 10px;
-    margin: 20% auto 0;
-    @media screen and (max-width: $tablet){
-      width: 80%;
-    }
-    @media screen and (max-width: $phone) {
-    width: 90%;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0),
-    -5px -5px 10px rgb(51, 51, 51);
-    background: none;
-    margin: 15px auto; 
-    }
-  }
+  width: 100%;
+  position: fixed;
+  background: whitesmoke;
+  display:flex;
+  height: 80px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+  @media screen and (max-width: $tablet) {
 
-.heading > h1, a, p {
-  background: none;
-  padding: 5px 20px;
-}
-
-  .short-dis {
-    width: 90%;
-    text-align: start;
-    background: none;
+  }
+  h1{
+    width: 60%;
+    align-self: center;
+    text-align: left;
+    padding-left: 30px;
   }
   .nav-link {
-    transition: 0.5s ease;
-    font-size: 25px;
-    color: white;
+    color: black;
+    font-size: 2rem;
     text-decoration: none;
-    text-align: center;
-    border-radius: 5px;
-    margin-right: 20px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0),
-      -5px -5px 10px rgb(51, 51, 51);
-    width: 200px;
-    padding: 10px;
-    margin: 10px 5px;
-    @media screen and (max-width: $phone) {
-    margin: 5px auto;
-    padding: 10px;
-    width: 30%;
-    font-size: 15px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0),
-    -5px -5px 10px rgb(51, 51, 51);
-    background: none;
+    padding-bottom: 5px;
+    font-weight: 600;
+    @media screen and (max-width: $tablet) {
+      font-size: 1.75rem;
+      padding: 0;
     }
   }
   .nav-link:hover {
-    transition: 1s ease;
-    border-radius: 5px;
-    margin-right: 20px;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0),
-    -2px -2px 2px rgb(51, 51, 51);
+    border-bottom: 4px solid black;
+    padding-bottom: 1px;
   }
   .navigation {
-    display: flex;
-    justify-content: space-evenly;
-    width: 60%;
-    background: rgb(26, 26, 26);
-    margin: 0 auto;
-    padding: 15px;
-    position: relative;
-    top: -10px;
-    border-radius: 10px;
-    animation-name: header-drop;
-    animation-duration: 1s;
-    @media screen and (max-width: $tablet) {
-      width: 100%;
-    }
+    width: 50%;
+    height: 70px;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
     @media screen and (max-width: $phone) {
-      width: 100%;
+    flex-direction: column;
     }
   }
-  @keyframes header-drop {
-    0%{
-      top:-100px;
-    }
-    100% {
-      top: -10px;
-    }
-  }
+}
+
+  
