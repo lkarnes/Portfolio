@@ -7,6 +7,7 @@ import Resume from './components/Resume.js';
 import HomePage from './components/HomePage.js';
 import Dashboard from './components/Dashboard.js';
 import {Route} from 'react-router-dom';
+import SingleProjectView from './components/SingleProjectView';
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
       <Route
       exact path='/dashboard'
       component={Dashboard}
+      />
+      <Route 
+      exact path='/project/:id'
+      component={SingleProjectView}
       />
 
     </div>

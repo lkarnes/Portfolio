@@ -1,0 +1,37 @@
+.project-view{
+    padding-top: 100px;
+    .project-box{
+        border: 2px solid black;
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            width: 550px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .project-content{
+            width: 100%;
+        }
+        button{
+            margin:0 auto;
+            border: 2px solid #bfc4b5;
+            font-size: 2rem;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 600;
+            border-radius: 5px;
+            margin: 10px 20px;
+        }
+        button:hover{
+                border: 3px solid #bfc4b5;
+                background: #bfc4b5;
+            }
+        .skill-list {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            display: flex;
+            margin: 10px 0;
+        }
+    }
+}

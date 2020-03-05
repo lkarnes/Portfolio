@@ -26,21 +26,30 @@ $phone: 480px;
     transition: .3s ease-in-out;
     p{
       text-align: center;
+      font-size: 18px;
     }
     .project-date{
-      color:grey;
+      color: #bfc4b5;
+      justify-self: flex-end;
     }
   }
   .project-card:hover{
-    background: rgb(200, 200, 200);
-    font-weight: 600;
+    background: #bfc4b5;
+    font-weight: 500;
+    color: white;
     .project-image{
       transition: .3s ease-in-out;
-      width: 215px;
+      width: 195px;
+      height: 195px;
+    }
+    .project-date {
+      transition: .3s ease-in-out;
+      color: white;
     }
   }
   .project-image{
-    width: 80%;
+    width: 180px;
+    height: 180px;
     border: 2px solid black;
     border-radius: 5px;
     margin: 10px 0;
