@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {projectsData} from './project-data';
+import {Link} from 'react-router-dom';
+import Back from '../images/back.png'
 
 export default function SingleProjectView(props) {
     const [project, setProject] = useState({})
@@ -14,7 +16,9 @@ export default function SingleProjectView(props) {
     console.log(project.skills)
     return (
         <div className='project-view'>
+            
             <div className='project-box'>
+            <Link to='/dashboard' className='back'><img src={Back}/></Link>
                 <img src={project.img}/>
                 <div className='project-content'>
                     <h1>{project.title}</h1>

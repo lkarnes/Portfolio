@@ -3,11 +3,13 @@ $tablet: 768px;
 $phone: 480px;
 
 #Resume {
+    padding: 100px;
     display: flex;
     margin: 0 auto;
     margin-bottom: 30px;
-    width:800px;
-    height:1000px; 
+    width:1000px;
+    height:1200px; 
+    
     @media screen and (max-width: $tablet) {
         max-width: 600px;
         max-height: 800px;

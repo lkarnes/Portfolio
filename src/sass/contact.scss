@@ -3,12 +3,12 @@ $tablet: 1024px;
 $phone: 480px;
 
 .contact {
-    margin: 20px auto;
+    margin: 100px auto 0;
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 50%;
     height:160px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     @media screen and (max-width: $tablet) {
         height: auto;
         align-items: center;
@@ -19,9 +19,6 @@ $phone: 480px;
         text-align: center;
         min-width: 20%;
         padding: 10px;
-        border-radius: 20px;
-        box-shadow: 10px 10px 10px rgb(0, 0, 0),
-        -10px -10px 10px rgb(51, 51, 51);
         @media screen and (max-width: $tablet) {
             width: 40%;
             margin: 20px; 
@@ -42,7 +39,6 @@ $phone: 480px;
     h1 {
         width: 100%;
         text-align: center;
-        margin-bottom: 20px;
     } 
 }
 

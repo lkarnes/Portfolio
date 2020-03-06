@@ -8,6 +8,7 @@ import HomePage from './components/HomePage.js';
 import Dashboard from './components/Dashboard.js';
 import {Route} from 'react-router-dom';
 import SingleProjectView from './components/SingleProjectView';
+import ProjectList from './components/ProjectList';
 
 function App() {
   return (
@@ -24,6 +25,14 @@ function App() {
       <Route 
       exact path='/project/:id'
       component={SingleProjectView}
+      />
+      <Route 
+      exact path='/about'
+      component={About}/>
+      <Route exact path='/projects'
+      component={ProjectList}/>
+      <Route exact path='/resume' 
+      component={Resume}
       />
 
     </div>
