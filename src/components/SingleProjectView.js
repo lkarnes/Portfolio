@@ -22,7 +22,7 @@ export default function SingleProjectView(props) {
                 <img src={project.img}/>
                 <div className='project-content'>
                     <h3>{project.title}</h3>
-                    <p>{project.date}</p>
+                    <p className='date'>{project.date}</p>
                     <p>{project.description}</p>
                     <ul className='skill-list'>
                         {!project.skills? <li>loading...</li> : project.skills.map(skill => (
@@ -30,8 +30,8 @@ export default function SingleProjectView(props) {
                         ))
                         }
                     </ul>
-                    <a href={project.githubLink}><button>{!project.githubLink ? "No Github Link": "Github Link"}</button></a>
-                    <a href={project.siteLink}><button>{!project.siteLink ? "No Site Link": "Site Link"}</button></a>
+                    <a href={project.githubLink}><button className={!project.githubLink ? 'redbutton' : ''}>{!project.githubLink ? "No Github Link": "Github Link"}</button></a>
+                    <a href={project.siteLink}><button className={!project.githubLink ? 'redbutton' : ''}>{!project.siteLink ? "No Site Link": "Site Link"}</button></a>
                 </div>
             </div>
         </div>
