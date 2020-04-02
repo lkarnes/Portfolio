@@ -5,43 +5,43 @@ $phone: 480px;
 .header {
   width: 100%;
   position: fixed;
-  background: whitesmoke;
+  background: rgb(120, 133, 151);
+  color: white;
   display:flex;
-  height: 80px;
-  align-items: flex-start;
+  height: 40px;
   padding: 10px 0;
   border-bottom: 2px solid black;
   @media screen and (max-width: $tablet) {
 
   }
-  h1{
-    width: 60%;
+  h2{
     align-self: center;
     text-align: left;
-    padding-left: 30px;
+    margin: 0 auto;
   }
-  h1:hover {
-    color: #67705a;
+  h2:hover {
+    color: black;
   }
   .nav-link {
-    color: black;
-    font-size: 2rem;
+    color: white;
+    font-size: 1.5rem;
     text-decoration: none;
-    padding-bottom: 5px;
+    padding: 5px;
     margin: 2px;
-    font-weight: 600;
+    font-weight: 200;
     @media screen and (max-width: $tablet) {
       font-size: 1.75rem;
       padding: 0;
     }
   }
   .nav-link:hover {
-    border-bottom: 4px solid #bfc4b5;
-    padding-bottom: 1px;
+    color: black;
+    font-weight: 600;
+    transition: ease-in-out .075s;
   }
   .navigation {
-    width: 50%;
-    height: 70px;
+    width: 35%;
+    height:30px;
     display:flex;
     justify-content: space-around;
     align-items: flex-end;

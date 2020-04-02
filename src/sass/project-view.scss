@@ -2,15 +2,13 @@
     padding-top: 100px;
     
     .project-box{
-        border: 2px solid grey;
-        border-radius: 5px;
         width: 60%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         z-index: 1;
         .back{
-            z-index: 2;
+            z-index: 1;
             position: absolute;
             width: 60px;
             height: 60px;
@@ -25,7 +23,7 @@
             }
         }
         img{
-            width: 610px;
+            width: 30%;
             margin: 20px auto;
             border-radius: 5px;
         }

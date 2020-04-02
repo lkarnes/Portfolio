@@ -21,7 +21,7 @@ export default function SingleProjectView(props) {
             <Link to='/dashboard' className='back'><img src={Back}/></Link>
                 <img src={project.img}/>
                 <div className='project-content'>
-                    <h1>{project.title}</h1>
+                    <h3>{project.title}</h3>
                     <p>{project.date}</p>
                     <p>{project.description}</p>
                     <ul className='skill-list'>

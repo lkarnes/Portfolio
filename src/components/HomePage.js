@@ -10,8 +10,8 @@ export default function HomePage(props) {
     return(
         <div className='home-page'>
             <div className='intro-box'>
-                <h1 className='intro-main'>Hello I am Logan Karnes...</h1>
-                <h3>A developer Born and raised in the beautiful PNW</h3>
+                <h3 className='intro-main'>Hello I am Logan Karnes...</h3>
+                <p>A developer Born and raised in the beautiful PNW</p>
                 <img className='intro-image' src={Photo}/>
                 <button className='continue' onClick={()=>props.history.push('/dashboard')}>Continue...</button>
             </div>
