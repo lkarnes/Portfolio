@@ -12,7 +12,6 @@ export default function HomePage(props) {
             <div className='intro-box'>
                 <h3 className='intro-main'>Hello I am Logan Karnes...</h3>
                 <p>A developer Born and raised in the beautiful PNW</p>
-                <img className='intro-image' src={Photo}/>
                 <button className='continue' onClick={()=>props.history.push('/dashboard')}>Continue...</button>
             </div>
         </div>

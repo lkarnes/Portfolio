@@ -15,7 +15,8 @@ $phone: 480px;
     padding-bottom: 30px;
   }
   .project-card{
-    border: 2px solid grey;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    background: rgb(30, 30, 30);
     margin: 10px 0;
     width: 250px;
     height: 300px;
@@ -26,6 +27,7 @@ $phone: 480px;
     p{
       text-align: center;
       font-size: 1.5rem;
+      width: 97%;
     }
     .project-date{
       justify-self: flex-end;
@@ -33,11 +35,13 @@ $phone: 480px;
     }
   }
   .project-card:hover{
-    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    box-shadow: 0 0 20px rgba(148, 148, 148, 0.5);
     font-weight: 500;
-    .project-date {
-      transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    .project-date{
       font-size: 1.2rem
+
     }
   }
   .project-image{

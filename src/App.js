@@ -13,7 +13,7 @@ import ProjectList from './components/ProjectList';
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Route path='/' component={Header}/>
       <Route 
       exact path='/'
       component={HomePage}
