@@ -10,7 +10,6 @@ export default function Header(props){
                 <Link to='/dashboard' className='nav-link'>Dashboard</Link>
                 <Link to='/about' className='nav-link'>About Me</Link>
                 <Link to='/projects' className='nav-link'>My Projects</Link>
-                <Link to='/resume' className='nav-link'>Resume</Link>
             </navigation>
         </div>
     )
