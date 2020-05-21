@@ -13,10 +13,13 @@ $phone: 480px;
     font-size: 62.5%;
   }
   body {
-    background: lightsteelblue;
+    background-image: url('../images/waves-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(158, 158, 158);
   }
   p, h1, h2, h3, h4, h5, a {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Comfortaa', cursive;
     line-height: 1.25;
   }
   p {
