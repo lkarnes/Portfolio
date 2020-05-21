@@ -1,0 +1,44 @@
+$desktop: 992px;
+$tablet: 1024px;
+$phone: 480px;
+
+.contact {
+    margin: 100px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height:160px;
+    justify-content: space-evenly;
+    @media screen and (max-width: $tablet) {
+        height: auto;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .contact-item {
+        text-align: center;
+        min-width: 20%;
+        padding: 10px;
+        @media screen and (max-width: $tablet) {
+            width: 40%;
+            margin: 20px; 
+        }
+        @media screen and (max-width: $phone) {
+            width: 90%;
+            margin: 15px; 
+        }
+        
+        a {
+            font-size: 20px; 
+            a:hover {
+                color: grey;
+            }
+            
+        }
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+    } 
+}
+

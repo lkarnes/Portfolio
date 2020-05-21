@@ -1,46 +1,67 @@
+$desktop: 992px;
+$tablet: 1024px;
+$phone: 480px;
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
-    background: whitesmoke;
+    @media screen and (max-width: $phone) {
+    }
   }
   html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
   }
   body {
-    font-size: 62.5%;
+    background: lightsteelblue;
   }
   p, h1, h2, h3, h4, h5, a {
     font-family: 'Roboto Slab', serif;
     line-height: 1.25;
   }
   p {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    @media screen and (max-width: $tablet) {
+      font-size: 1.5rem;
+    }
   }
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
+    @media screen and (max-width: $tablet) {
+      font-size: 2.5rem;
+    }
   }
   h2 {
-    font-size: 1.6rem;
+    font-size: 2.75rem;
+    @media screen and (max-width: $tablet) {
+      font-size: 2.25rem;
+    }
   }
   h3 {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    @media screen and (max-width: $tablet) {
+      font-size: 2rem;
+    }
+  }
+  li {
+    font-size: 1.25rem;
+    @media screen and (max-width: $tablet) {
+      font-size: 1rem;
+    }
   }
   .arrow {
-    transition: 0.5s ease;
-    background: white;
-    border: 2px solid black;
-    border-radius: 100%;
+    transition: 0.2s ease;
+    border-radius: 50%;
+    border: 1px solid black;
     width: 60px;
     margin: 10px auto;
     padding: 6px;
   }
   .arrow:hover {
-    transition: 0.5s ease;
-    background: lightgray;
-    box-shadow: 1px 1px 3px gray;
-    padding: 0px;
+    border: 2px solid black;
+    width: 62px;
   }
   body {
     margin: 0;
@@ -51,4 +72,12 @@
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
   }
+  .continue{
+    margin:0 auto;
+    font-size: 2rem;
+    background: none;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    border-radius: 5px;
+}
   

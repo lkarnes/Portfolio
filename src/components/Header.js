@@ -1,20 +1,16 @@
 import React from 'react';
-import Arrow from '../images/down-arrow.png'
+import {Link} from 'react-router-dom';
 
 export default function Header(){
     return (
         <div className='header'>
-            <div className='navigation'>
-                <a href='#Projects' className='nav-link'>My Projects</a>
-                <a href='#About' className='nav-link'>About Me</a>
-                <a href='#Resume' className='nav-link'>Resume</a>
-            </div>
-            <div className='heading'>
-                <h1>Hello, my name is Logan Karnes.</h1>
-                <p className='short-dis'>I am a Full Stack Web Developer from Lambda School who specailizes in React.js.<br/>**Currently under construction***</p>
-                <a href='#About'><img className='arrow' src={Arrow}/></a>    
-            </div>
-            
+            <h2>Logan Karnes Portfolio</h2>
+            <navigation className='navigation'>
+                <Link to='/dashboard' className='nav-link'>Dashboard</Link>
+                <Link to='/about' className='nav-link'>About Me</Link>
+                <Link to='/projects' className='nav-link'>My Projects</Link>
+                <Link to='/resume' className='nav-link'>Resume</Link>
+            </navigation>
         </div>
     )
 }

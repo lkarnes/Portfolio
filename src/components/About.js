@@ -1,19 +1,16 @@
 import React from 'react';
 import Beach from '../images/beach-3.jpeg'
-import Arrow from '../images/down-arrow.png'
+import Arrow from '../images/back.png'
 
 export default function About(){
     return(
-        <div id='About' className='about-box'>
-            
+        
+        <div className='about-box'>
             <img className='about-img-box'src={Beach} />
             <h1>About Me</h1>
             <div className='text-box'>
-                <h2>My Journey</h2>
-                <p>Ever since I took my first Tech class in 7th grade I have had a deep interest in the Tech industry. After switching to online school after my sophomore year in high school so I could work a full-time job, I began to search for my passion. Programming was the first thing that came to mind when I began to look. I first began searching online for books and courses, the first of which was the book Eloquent Javascript. I read the book for a few weeks and made sure I was doing all the practice problems and taking notes but had a difficult time connecting what I was reading to real life applications. So I began searching for a new way to learn, after asking a developer friend of mine what his advice for me was, he suggested Lambda School. I then went and took the Precourse and the admissions tests and haven't stopped coding since. Building concrete foundations by day and coding by night, I feel like my work in the labor industry has been extremely beneficial to me, teaching me valuable time management skills and constantly driving me to learn more and go above and beyond expectations.</p>
-                
+            <p>I am 21 years old and grew up in Ridgefield Washington but now reside in Downtown Vancouver with my wife. I began working full time at the age of 16 after switching to online school and have been mainly working in the construction industry since. Starting out working as a shop hand for an electrical company (Prairie Electric) and then moving on to build concrete foundations. I also spent 8 months working at PDX as a ground service agent (baggage handler) but went back to doing foundations after getting engaged to my now wife. After getting married in September of 2018 I was motivated and ready to find out what I wanted to do as a career. I had already started looking into web development and had even started teaching myself code through books and free to use websites. A few months of searching and I finally settled on Lambda Schools Full Stack Web Development Course. Starting in April of 2018 I have spent 15 to 20 hours a week programming and studying and have enjoyed every minute of it.</p>                
             </div>
-            <a href='#Projects'><img className='arrow' src={Arrow}/></a>
         </div>
     )
 }

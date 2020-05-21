@@ -1,55 +1,54 @@
+$desktop: 992px;
+$tablet: 1030px;
+$phone: 480px;
+
 .header {
-    background-image: url(../images/background.jpeg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    background-position-y: top;
-    width: 100%;
-    padding: 0 60px 20px 60px;
+  width: 100%;
+  position: fixed;
+  background: rgb(120, 133, 151);
+  color: white;
+  display:flex;
+  height: 40px;
+  padding: 10px 0;
+  border-bottom: 2px solid black;
+  @media screen and (max-width: $tablet) {
+
+  }
+  h2{
+    align-self: center;
+    text-align: left;
     margin: 0 auto;
-    height: 800px;
-    color: white;
   }
-  .heading {
-    width: 50%;
-    text-align: center;
-    font-size: 15px;
-    background: rgba(128, 128, 128, 0.65);
-    border-radius: 15px;
-    margin: 250px auto 0;
-  }
-
-.heading > h1, a {
-  background: none;
-}
-
-  .short-dis {
-    width: 90%;
-    text-align: start;
-    background: none;
+  h2:hover {
+    color: black;
   }
   .nav-link {
-    transition: 0.5s ease;
-    font-size: 20px;
     color: white;
+    font-size: 1.5rem;
     text-decoration: none;
-    text-align: center;
-    background: rgba(128, 128, 128, 0.75);
-    border-radius: 10px;
-    border: 1px solid gray;
-    min-width: 150px;
-    padding: 10px;
-    margin: 10px 5px;
+    padding: 5px;
+    margin: 2px;
+    font-weight: 200;
+    @media screen and (max-width: $tablet) {
+      font-size: 1.75rem;
+      padding: 0;
+    }
   }
   .nav-link:hover {
-    transition: 1s ease;
     color: black;
-    background: white;
+    font-weight: 600;
+    transition: ease-in-out .075s;
   }
   .navigation {
-    display: flex;
+    width: 35%;
+    height:30px;
+    display:flex;
     justify-content: space-around;
-    width: 100%;
-    margin: 0 auto;
-    background: none;
+    align-items: flex-end;
+    @media screen and (max-width: $phone) {
+    flex-direction: column;
+    }
   }
+}
+
+  

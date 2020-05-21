@@ -1,0 +1,64 @@
+.project-view{
+    padding-top: 100px;
+    
+    .project-box{
+        background: rgb(120, 133, 151);
+        color: white;
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        z-index: 1;
+        p{
+            padding: 10px 30px;
+        }
+        .date{
+            font-size: 1.45rem;
+        }
+        h3{
+            padding: 0 30px
+        }
+        .back{
+            z-index: 1;
+            position: absolute;
+            margin-left: 15px;
+            width: 60px;
+            height: 60px;
+            
+            img{
+                width: 40px;
+                height: 35px;
+                border-radius: 50%;
+            }
+        }
+        img{
+            width: 30%;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        .project-content{
+            width: 100%;
+        }
+        button{
+            margin:0 auto;
+            background: #8BC34A;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            font-family: 'Roboto Slab', serif;
+        }
+        button:hover{
+                font-size: 1.55rem;
+                transition: ease-in-out .2s;
+            }
+        .skill-list {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            display: flex;
+            margin: 10px 0;
+        }
+    }
+}
