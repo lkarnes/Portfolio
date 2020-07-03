@@ -3,6 +3,7 @@ import Bountiful from '../images/Bountiful.jpeg';
 import Better from '../images/BetterProfessor.png';
 import DadJokes from '../images/dad-jokes.png';
 import Findur from '../images/Findur.png';
+import Cgol from '../images/cgol.PNG'
 
 export const projectsData = [
     {
@@ -34,11 +35,13 @@ export const projectsData = [
     img: `${DadJokes}`, 
     githubLink: 'https://github.com/lkarnes/Back-end',
     siteLink: ''},
-    {id: 4,title:'FindUr.city Lambda Labs', date:'January-May 2020', description: "Lambda Labs is The Biggest Project in Lambdas Program, spanning over 4 months it is made to simulate working on a real development team from beginning to end of a project. My group(4 developers, 2 designers and 3 data scientists) have been working together to build Findur.city, an application made to help the user find the city they need based off of surveys and the DS teams custom livability score. We have a lot of high hopes for this project and have a lot of cool APIs we are implementing to make this the best site we can (react-map-gl, okta and react-graphs to name a few).So far Labs has been an amazing learning experience, from learning how to speak with a stakeholder, working with UX designers and Data Scientist to writing new, clean and efficient code with a strong team of developers. It has been a blast so far and I can't wait to see where this project goes in the next few months.",
+    {id: 4,title:'FindUr.city Lambda Labs', date:'January-May 2020', description: "Lambda Labs is The Biggest Project in Lambdas Program, spanning over 4 months it is made to simulate working on a real development team from beginning to end of a project. My group(4 developers, 2 designers and 3 data scientists) worked together to build Findur.city, an application made to help the user find the city they need based off of surveys and the DS teams custom livability score. Lambda Labs was an amazing learning experience, from learning how to speak with a stakeholder, working with UX designers and Data Scientist to writing new, clean and efficient code with a strong team of developers.",
     skills: ['react', 'react-router','forms', 'APIs', 'useState', 'useEffect', 'CSS/LESS',"Node.js", "express", "pgAdmin", "postgres", "knex", "middleware", "third-party authentication" ],
       img:`${Findur}`, githubLink: 'https://github.com/Lambda-School-Labs/juxta-city-data-fe',
       siteLink: 'https://production-juxta-city.herokuapp.com/'},
-    // {id:5,title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
+    {id:5,title:'Conways Game of Life', date:'June 2020', description:
+     'Conways Game of Life was created by the Mathmatician John Conway in the 70s originally done with pen in paper it has become a huge trend in the Computer Science community. Sadly John Conway passed away earlier this year during the Corona Virus outrbreak, to help commemorate him Lambda School assigned The Game of Life as our first CS Build Week. for this project I decided the stick with Vanilla JS rather than React or python to refresh myself on the syntax and improve my general JS ability. to display the cells on the screen I used a HTML table and assigned each position a unique id (example: r1c2 = row 2 column 3). I then created a 2d array that matches the hight and width of the table and used that to loop through and run the function to check if the cell is dead alive or born based off of conways rules. I also created some additional features like changing the timing, width, height as well as randomization, clickable cells and some prebuilt shapes that can be used. I highly encourage you to check it out if you are not familiar of Conways Game of Life its a lot of fun and pretty interesting.'
+     ,  skills: ['Vanilla JS','Algorithms','Computer Science','CSS', 'HTML Tables'],  img: `${Cgol}`, siteLink: 'https://lkarnes.github.io/CS-Build-Week-1/index.html', githubLink:'https://github.com/lkarnes/CS-Build-Week-1'},
     // {id:6,title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
     // {id:7,title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
     // {id:8,title:'t4', date:'', description: '',  skills: [],  img: '', link: ''},
