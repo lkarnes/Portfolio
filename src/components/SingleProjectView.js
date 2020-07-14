@@ -5,14 +5,16 @@ import Back from '../images/back.png'
 
 export default function SingleProjectView(props) {
     const [project, setProject] = useState({})
-    console.log(project)
     useEffect(()=>{
         projectsData.map(proj => {
-            if(proj.id === props.match.params.id){
-                setProject(proj)
+            console.log(proj.id===props.match.params.id)
+            if(proj.id === parseInt(props.match.params.id)){
+                return setProject(proj)
             }
         })
     },[])
+    
+
     return (
         <div className='project-view'>
             
@@ -31,8 +33,8 @@ export default function SingleProjectView(props) {
                         ))
                         }
                     </ul>
-                    <a href={project.githubLink}><button className={!project.githubLink ? 'redbutton' : 'green-button'}>{!project.githubLink ? "No Github Link": "Github Link"}</button></a>
-                    <a href={project.siteLink}><button className={!project.githubLink ? 'redbutton' : 'green-button'}>{!project.siteLink ? "No Site Link": "Site Link"}</button></a>
+                    <a href={project.githubLink}><button className={!project.githubLink ? 'redbutton' : ''}>{!project.githubLink ? "No Github Link": "Github Link"}</button></a>
+                    <a href={project.siteLink}><button className={!project.githubLink ? 'redbutton' : ''}>{!project.siteLink ? "No Site Link": "Site Link"}</button></a>
                 </div>
             </div>
         </div>
