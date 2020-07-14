@@ -13,6 +13,8 @@ $phone: 480px;
         height: auto;
         align-items: center;
         width: 100%;
+    }
+    @media screen and (max-width: $phone) {
         flex-direction: column;
     }
     .contact-item {
@@ -20,20 +22,12 @@ $phone: 480px;
         min-width: 20%;
         padding: 10px;
         @media screen and (max-width: $tablet) {
-            width: 40%;
+            width: 20%;
             margin: 20px; 
         }
         @media screen and (max-width: $phone) {
             width: 90%;
             margin: 15px; 
-        }
-        
-        a {
-            font-size: 20px; 
-            a:hover {
-                color: grey;
-            }
-            
         }
     }
     h1 {

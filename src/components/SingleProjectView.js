@@ -31,8 +31,8 @@ export default function SingleProjectView(props) {
                         ))
                         }
                     </ul>
-                    <a href={project.githubLink}><button className={!project.githubLink ? 'redbutton' : ''}>{!project.githubLink ? "No Github Link": "Github Link"}</button></a>
-                    <a href={project.siteLink}><button className={!project.githubLink ? 'redbutton' : ''}>{!project.siteLink ? "No Site Link": "Site Link"}</button></a>
+                    <a href={project.githubLink}><button className={!project.githubLink ? 'redbutton' : 'green-button'}>{!project.githubLink ? "No Github Link": "Github Link"}</button></a>
+                    <a href={project.siteLink}><button className={!project.githubLink ? 'redbutton' : 'green-button'}>{!project.siteLink ? "No Site Link": "Site Link"}</button></a>
                 </div>
             </div>
         </div>
