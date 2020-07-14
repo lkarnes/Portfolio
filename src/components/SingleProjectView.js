@@ -8,7 +8,7 @@ export default function SingleProjectView(props) {
     console.log(project)
     useEffect(()=>{
         projectsData.map(proj => {
-            if(proj.id == props.match.params.id){
+            if(proj.id === props.match.params.id){
                 setProject(proj)
             }
         })
