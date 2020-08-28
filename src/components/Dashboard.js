@@ -7,10 +7,9 @@ import Contact from './Contact.js';
 export default function Dashboard(props){
     return(
         <div className='dashboard-main'>
-            
+            <About/>
             <ProjectList {...props}/>
             <Contact/>
-            <About/>
             <Resume/>
         </div>
     )

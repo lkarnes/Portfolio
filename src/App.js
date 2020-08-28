@@ -1,7 +1,5 @@
 import React from 'react';
-import projectsData from './data';
 import About from './components/About.js';
-import Contact from './components/Contact.js';
 import Header from './components/Header.js';
 import Resume from './components/Resume.js';
 import HomePage from './components/HomePage.js';
@@ -16,10 +14,6 @@ function App() {
       <Route path='/' component={Header}/>
       <Route 
       exact path='/'
-      component={HomePage}
-      />
-      <Route
-      exact path='/dashboard'
       component={Dashboard}
       />
       <Route 
