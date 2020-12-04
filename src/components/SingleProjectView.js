@@ -7,8 +7,9 @@ export default function SingleProjectView(props) {
     const [project, setProject] = useState({})
     useEffect(()=>{
         projectsData.map(proj => {
-            console.log(proj.id===props.match.params.id)
+            console.log(proj.id, props.match.params.id)
             if(proj.id === parseInt(props.match.params.id)){
+                console.log(proj)
                 return setProject(proj)
             }
         })
@@ -32,8 +33,8 @@ export default function SingleProjectView(props) {
                         ))
                         }
                     </ul>
-                    <a href={project.githubLink}><button className={!project.githubLink ? 'redbutton' : ''}>{!project.githubLink ? "No Github Link": "Github Link"}</button></a>
-                    <a href={project.siteLink}><button className={!project.githubLink ? 'redbutton' : ''}>{!project.siteLink ? "No Site Link": "Site Link"}</button></a>
+                    <a href={project.githubLink}><button className={!project.githubLink ? 'red-button' : 'green-button'}>{!project.githubLink ? "No Github Link": "Github Link"}</button></a>
+                    <a href={project.siteLink}><button className={!project.siteLink ? 'red-button' : 'green-button'}>{!project.siteLink ? "No Site Link": "Site Link"}</button></a>
                 </div>
             </div>
         </div>
