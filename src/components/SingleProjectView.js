@@ -18,7 +18,7 @@ export default function SingleProjectView(props) {
     return (
         <div className='project-view'>
             <div className='project-box'>
-            <Link to='/dashboard' className='back'>
+            <Link to='/' className='back'>
                 <img src={Back} alt='back'/>    
             </Link>
                 <img src={project.img} alt='project'/>

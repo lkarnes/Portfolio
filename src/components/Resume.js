@@ -1,5 +1,5 @@
 import React from 'react';
-import Resume from '../images/Logan-Karnes-Resume.pdf'
+import Resume from '../images/Logan_Karnes_Resume.PDF'
 
 export default function(props) {
 
