@@ -7,9 +7,7 @@ export default function SingleProjectView(props) {
     const [project, setProject] = useState({})
     useEffect(()=>{
         projectsData.map(proj => {
-            console.log(proj.id, props.match.params.id)
             if(proj.id === parseInt(props.match.params.id)){
-                console.log(proj)
                 return setProject(proj)
             }
         })

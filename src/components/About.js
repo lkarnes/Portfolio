@@ -1,6 +1,5 @@
 import React from 'react';
 import Beach from '../images/beach-3.jpeg'
-import Arrow from '../images/back.png'
 
 export default function About(){
     return(

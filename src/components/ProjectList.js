@@ -2,7 +2,6 @@ import React from 'react';
 import {projectsData} from './project-data.js';
 
  export default function ProjectList(props) {
-     console.log(props)
      const handleClick = (proj) => {
          props.history.push(`/project/${proj.id}`)
      }
